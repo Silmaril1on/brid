@@ -35,7 +35,7 @@ function Frame164() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="mt-10">
+    <section className="hidden md:center flex-col mt-10">
       <HeaderTwo />
       <div className="grid grid-cols-3 grid-rows-1 gap-4 p-10">
         {horizonData.map((item) => {
@@ -84,7 +84,7 @@ function Frame164() {
           );
         })}
       </div>
-      <div className="p-4 flex justify-end ">
+      <div className="p-4 flex justify-end w-full">
         <h1 className="mr-10 text-3xl underline underline-offset-2 text-gray500">
           view all projects
         </h1>

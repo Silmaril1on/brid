@@ -4,6 +4,7 @@ import Frame155 from "./pages/Frame155";
 import Frame156 from "./pages/Frame156";
 import Frame159 from "./pages/Frame159";
 import Frame164 from "./pages/Frame164";
+import Frame164Mobile from "./pages/Frame164Mobile";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Frame159 />
       <Frame155 />
       <Frame164 />
+      <Frame164Mobile />
       <Frame156 />
     </>
   );

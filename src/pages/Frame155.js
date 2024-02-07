@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ArrowSvg from "../components/ArrowSvg";
+import GreenArrowSvg from "../components/GreenArrowSvg";
 import { motion } from "framer-motion";
 import { slideFromTop } from "../framerMotion/motionValues";
 
@@ -61,28 +62,32 @@ function Frame155() {
     <section className="center flex-col w-full">
       <div className="center flex-col w-full">
         <div className=" w-full">
-          <h1 className="w-full text-end text-9xl pr-10">services</h1>
+          <h1 className="w-full text-end text-6xl md:text-9xl pr-2 md:pr-10">
+            services
+          </h1>
         </div>
         <motion.div
           variants={slideFromTop}
           initial="hidden"
           whileInView="visible"
-          className="mt-10 px-10 w-full space-y-1 flex items-start flex-col"
+          className="mt-10 px-2 md:px-10 w-full space-y-1 flex items-start flex-col"
         >
           {servicesData.map((item) => {
             return (
               <motion.div
                 variants={slideFromTop}
-                className="center overflow-hidden cursor-pointer w-2/4 flex-row space-x-10"
+                className="center overflow-hidden cursor-pointer w-full md:w-2/4 flex-row space-x-4 md:space-x-10 h-8"
                 key={item.id}
               >
-                <ArrowSvg />
+                <div className="h-12">
+                  {active === item.id ? <GreenArrowSvg /> : <ArrowSvg />}
+                </div>
                 <h1
                   onClick={() => setActive(item.id)}
                   className={
                     active === item.id
-                      ? "text-4xl w-full text-green duration-300"
-                      : "text-4xl w-full duration-300"
+                      ? "text-lg md:text-4xl w-full text-green duration-300"
+                      : "text-lg md:text-4xl w-full duration-300"
                   }
                 >
                   {item.name}

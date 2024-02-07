@@ -2,7 +2,13 @@ import React from "react";
 
 function ArrowSvg() {
   return (
-    <svg viewBox="0 0 40 40" width="40px" height="40px" fill="none">
+    <svg
+      className="p-2"
+      viewBox="0 0 40 40"
+      width="100%"
+      height="100%"
+      fill="none"
+    >
       <rect
         x="39.3545"
         width="29.6774"

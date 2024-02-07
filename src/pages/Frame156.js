@@ -4,12 +4,12 @@ import ElipseSvg from "../components/ElipseSvg";
 
 function Frame156() {
   return (
-    <section className="h-full">
+    <section className="h-screen">
       <HeaderTwo />
-      <div className="center flex-row relative">
-        <article className="bg-gray400 flex justify-between flex-col h-screen w-full">
+      <div className="center flex-col md:flex-row relative">
+        <article className="bg-gray400 flex justify-between flex-col md:h-screen w-full">
           <div className="relative w-auto m-5 border-bottom mt-10 pt-20 border-top">
-            <h1 className="w-2/4">
+            <h1 className="w-full md:w-2/4">
               Our goal is to pay special attention to each client, providing
               them with a high-quality final product. To achieve these results,
             </h1>
@@ -22,16 +22,16 @@ function Frame156() {
             </div>
           </div>
         </article>
-        <article className="bg-black h-screen w-2/3 center">
+        <article className="bg-black h-full md:h-screen w-full md:w-2/3 center">
           <div className="mb-20 ">
-            <h1 className="my-5 mx-10 overflow-hidden relative border-left">
+            <h1 className="my-5 mx-5 md:mx-10 overflow-hidden relative border-left">
               we try to understand client’s requirements the best that we can
               and offer effective ways to solve for their business.
             </h1>
           </div>
         </article>
-        <article className="absolute bottom-40 px-5 w-full">
-          <h1 className="text-5xl">
+        <article className="md:absolute bottom-40 px-5 w-full">
+          <h1 className="text-3xl md:text-5xl">
             \ we are team of young professionals who create Brand identity that
             leaves fingerprints on the market & the minds of your customers, so
             their numbers grow by leaps & bounds \

@@ -9,7 +9,7 @@
     @apply flex justify-center items-center;
   }
   .border-bottom {
-    @apply before:absolute before:border-b before:border-gray200 before:-bottom-4 before:w-full;
+    @apply before:absolute before:border-b before:border-gray200 before:bottom-0 md:before:-bottom-4 before:w-full;
   }
   .border-top {
     @apply before:absolute before:border-t before:border-gray200 before:top-0 before:w-full;
@@ -18,7 +18,7 @@
     @apply before:absolute before:border-t before:border-gray200 before:top-5 before:left-0 before:w-full;
   }
   .border-left {
-    @apply before:border-b before:absolute before:bottom-2 before:w-full before:left-28;
+    @apply before:border-b before:absolute before:bottom-0 md:before:bottom-2 before:w-full before:left-0 md:before:left-28;
   }
 }
 

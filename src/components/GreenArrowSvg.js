@@ -10,7 +10,7 @@ function GreenArrowSvg() {
       animate="visible"
       width="100%"
       height="100%"
-      viewBox="0 0 50 75"
+      viewBox="-10 0 70 70"
       fill="none"
     >
       <motion.path

@@ -45,3 +45,28 @@ export const slideFromTop = {
     },
   },
 };
+
+export const slideShow = {
+  hidden: (direction) => {
+    return {
+      x: direction > 0 ? 200 : -200,
+      opacity: 0,
+    };
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "ease",
+    },
+  },
+  exit: (direction) => {
+    return {
+      x: direction > 0 ? -200 : 200,
+      opacity: 0,
+      transition: {
+        type: "ease",
+      },
+    };
+  },
+};
