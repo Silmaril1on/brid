@@ -19,6 +19,7 @@ module.exports = {
         gray400: "#2E2E2E",
         gray500: "#6c6c6c",
         gray800: "#161815",
+        gray900: "#292929",
         green: "#2CDC00",
         white200: "#DFDFDF",
         black: "#151715",
@@ -34,6 +35,7 @@ module.exports = {
         400: "400px",
         450: "450px",
         500: "500px",
+        1500: "1500px",
       },
       width: {
         98: "98%",

@@ -4,7 +4,7 @@ import ElipseSvg from "../components/ElipseSvg";
 
 function Frame156() {
   return (
-    <section className="h-screen">
+    <section className="h-full">
       <HeaderTwo />
       <div className="center flex-col md:flex-row relative">
         <article className="bg-gray400 flex justify-between flex-col md:h-screen w-full">
