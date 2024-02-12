@@ -10,7 +10,7 @@ function Projects() {
   return (
     <section id="work" className="pb-3 pt-14 w-full">
       <MobileProjectSlider />
-      <div className="overflow-hidden hidden md:flex">
+      <div className="overflow-hidden hidden md:block">
         <ProjectsList index={index} />
         <ProjectButtons index={index} setIndex={setIndex} />
       </div>
