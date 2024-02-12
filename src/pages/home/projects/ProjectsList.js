@@ -4,7 +4,6 @@ import ArrowSvg from "../../../components/ArrowSvg";
 import RoundLineSvg from "../../../components/RoundLineSvg";
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
-import ProjectButtons from "./ProjectButtons";
 
 function ProjectsList({ index }) {
   const [active, setActive] = useState(0);
