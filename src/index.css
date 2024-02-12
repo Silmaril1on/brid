@@ -9,3 +9,7 @@ body {
   color: #c5c5c5;
   text-transform: uppercase;
 }
+
+html {
+  scroll-behavior: smooth;
+}

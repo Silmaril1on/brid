@@ -13,13 +13,9 @@ module.exports = {
         50: "100%",
       },
       colors: {
-        gray100: "#c5c5c5",
-        gray200: "#919191",
-        gray300: "#D3CDCD",
-        gray400: "#2E2E2E",
-        gray500: "#6c6c6c",
-        gray800: "#161815",
-        gray900: "#292929",
+        gray100: "#D3CDCD",
+        gray400: "#777676",
+        gray800: "#292929",
         green: "#2CDC00",
         white200: "#DFDFDF",
         black: "#151715",
@@ -35,10 +31,15 @@ module.exports = {
         400: "400px",
         450: "450px",
         500: "500px",
+        650: "650px",
         1500: "1500px",
+      },
+      maxWidth: {
+        60: "60%",
       },
       width: {
         98: "98%",
+        505: "505px",
       },
       zIndex: {
         1: "1",
