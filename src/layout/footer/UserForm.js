@@ -11,7 +11,7 @@ function UserForm() {
     e.preventDefault();
 
     emailjs
-      .sendForm("service_5vt7uf4", "template_cr1yhjk", form.current, {
+      .sendForm("service_5vt7uf4", "template_ahjww3l", form.current, {
         publicKey: "yQmXdXcvudISkKYU1",
       })
       .then(
@@ -62,7 +62,7 @@ function UserForm() {
               ? "footer-input-style placeholder:text-green"
               : "footer-input-style"
           }
-          name="from_name"
+          name="from_mail"
         />
       </div>
       <div className="w-full md:w-10/12 relative border-bottom ">
