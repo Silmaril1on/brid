@@ -4,12 +4,12 @@ import { staggerOpacity600 } from "../../../framerMotion/motionValues";
 
 function Headline() {
   return (
-    <article className="md:absolute flex items-end pb-36 bottom-0 px-5 w-full ">
+    <article className="md:absolute flex items-end md:pb-36 bottom-0 px-5 w-full">
       <motion.div
         variants={staggerOpacity600}
         initial="hidden"
         whileInView="visible"
-        className="*:text-3xl *:md:text-5xl"
+        className="*:text-sm *:md:text-5xl"
       >
         <motion.h1 variants={staggerOpacity600}>
           \ we are team of young professionals who create

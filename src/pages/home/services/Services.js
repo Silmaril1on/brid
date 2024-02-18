@@ -8,7 +8,7 @@ function Services() {
       <div className="center flex-col w-full">
         <AnimatedLetters
           text="services"
-          className="stagger-letters items-end mr-20"
+          className="stagger-letters text-end mr-20"
         />
         <ServicesList />
       </div>

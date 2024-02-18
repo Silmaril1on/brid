@@ -3,7 +3,7 @@ import React from "react";
 function ElipseSvg() {
   return (
     <svg
-      className="absolute top-0"
+      className="absolute top-0 z-0"
       width="100%"
       height="100%"
       viewBox="0 0 347 48 "

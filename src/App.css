@@ -8,12 +8,6 @@
   .center {
     @apply flex justify-center items-center;
   }
-  .items-end {
-    @apply flex justify-end items-center;
-  }
-  .items-start {
-    @apply flex justify-start items-center;
-  }
   .stagger-letters {
     @apply overflow-hidden w-full;
   }
@@ -35,7 +29,44 @@
   .project-section-container {
     @apply w-full p-2 md:w-11/12 center flex-col;
   }
+  .factory-input-style {
+    @apply w-full bg-transparent border rounded-full py-2 pl-5 border-green uppercase text-xs placeholder:text-gray400 outline-none;
+  }
+  .footer-input-style {
+    @apply bg-transparent w-full pl-3 uppercase placeholder:text-gray400 outline-none;
+  }
 }
 
 @layer utilities {
+  .lit-text {
+    animation: lit 5s 2s linear infinite;
+  }
+
+  @keyframes lit {
+    0%,
+    18%,
+    20%,
+    50.1%,
+    60%,
+    65%,
+    80%,
+    90.1%,
+    92% {
+      color: #2cdc0079;
+      text-shadow: none;
+    }
+    18.1%,
+    20.1%,
+    30%,
+    50%,
+    60.1%,
+    65%,
+    80.1%,
+    90%,
+    92.1%,
+    100% {
+      color: #2cdc00;
+      text-shadow: 0 0 10px #2cdc00, 0 0 20px #2cdc00, 0 0 40px #2cdc00;
+    }
+  }
 }

@@ -131,3 +131,17 @@ export const zoomIn = {
     },
   },
 };
+
+export const rotateX = {
+  hidden: {
+    rotateX: 90,
+  },
+  visible: {
+    rotateX: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.4,
+      delayChildren: 0.4,
+    },
+  },
+};

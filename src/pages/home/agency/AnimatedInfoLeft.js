@@ -3,10 +3,10 @@ import ElipseSvg from "../../../components/ElipseSvg";
 
 function AnimatedInfo() {
   return (
-    <section className="w-7/12 bg-gray800">
+    <section className="w-full md:w-7/12 bg-gray800">
       <article className="flex flex-col justify-between h-full py-5">
-        <div className="m-10 relative border-bottom">
-          <h1 className="w-3/5">
+        <div className="m-3 md:m-10 relative border-bottom">
+          <h1 className="w-full md:w-3/5">
             Our goal is to pay special attention to each client, providing them
             with a high-quality final product. To achieve these results,
           </h1>

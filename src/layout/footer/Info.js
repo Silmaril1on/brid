@@ -8,7 +8,7 @@ function Info() {
       <article className="relative border-bottom p-3">
         <h1>lets talk about you</h1>
       </article>
-      <section className="center flex-row mt-5">
+      <section className="center flex-col md:flex-row mt-5">
         <UserForm />
         <SocialInfo />
       </section>

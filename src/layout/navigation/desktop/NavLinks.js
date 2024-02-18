@@ -11,14 +11,14 @@ function NavLinks() {
         variants={staggerOpacity200}
         initial="hidden"
         animate="visible"
-        className="center flex-row"
+        className="center flex-row [&>*:nth-child(5)]:lit-text [&>*:nth-child(5)]:font-bold"
       >
         {navlinksData.map((item) => {
           return (
             <motion.a
               href={item.link}
               variants={staggerOpacity200}
-              className="mx-3"
+              className="mx-3 "
               key={item.id}
             >
               <h1

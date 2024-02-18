@@ -25,6 +25,7 @@ module.exports = {
       },
       fontSize: {
         xxs: "9px",
+        90: "90px",
         200: "200px",
       },
       height: {

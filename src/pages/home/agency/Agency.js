@@ -7,7 +7,7 @@ function Agency() {
   return (
     <section
       id="agency"
-      className="w-full h-650 center flex-row *:h-full relative"
+      className="w-full h-650 center flex-col md:flex-row *:h-full relative"
     >
       <AnimatedInfoLeft />
       <AnimatedIntoRight />
