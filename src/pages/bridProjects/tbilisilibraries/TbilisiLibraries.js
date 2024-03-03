@@ -3,6 +3,7 @@ import TbilisiLibrariesContent from "./TbilisiLibrariesContent";
 import HomeBar from "../../../components/HomeBar";
 import { Helmet } from "react-helmet";
 import ProjectButtons from "./ProjectButtons";
+import About from "./About";
 
 function TbilisiLibraries() {
   return (
@@ -11,6 +12,7 @@ function TbilisiLibraries() {
         <title>BRID | Tbilisi Libraries</title>
       </Helmet>
       <HomeBar />
+      <About />
       <TbilisiLibrariesContent />
       <ProjectButtons />
     </section>

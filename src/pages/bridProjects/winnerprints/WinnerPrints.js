@@ -3,6 +3,7 @@ import HomeBar from "../../../components/HomeBar";
 import WinnerPrintsContent from "./WinnerPrintsContent";
 import { Helmet } from "react-helmet";
 import ProjectButtons from "./ProjectButtons";
+import About from "./About";
 
 function WinnerPrints() {
   return (
@@ -11,6 +12,7 @@ function WinnerPrints() {
         <title>BRID | WinnerPrints</title>
       </Helmet>
       <HomeBar />
+      <About />
       <WinnerPrintsContent />
       <ProjectButtons />
     </section>

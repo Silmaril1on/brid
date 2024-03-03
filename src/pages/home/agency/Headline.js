@@ -1,26 +1,38 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { staggerOpacity600 } from "../../../framerMotion/motionValues";
 
+const text = [
+  " / we are team of young professionals who create",
+  " BRAND IDENTITY THAT LEAVES FINGERPRINTS ON THE MARKET",
+  " & THE MINDS OF YOUR CUSTOMERS, SO THEIR NUMBERS GROW",
+  " BY LEAPS & BOUNDS /",
+];
+
 function Headline() {
+  const [cursorX, setCursorX] = useState();
+  const [cursorY, setCursorY] = useState();
+
+  window.addEventListener("mousemove", (e) => {
+    setCursorX(e.pageX);
+    setCursorY(e.pageY);
+  });
+
   return (
     <article className="md:absolute flex items-end md:pb-36 bottom-0 px-5 w-full">
       <motion.div
         variants={staggerOpacity600}
         initial="hidden"
         whileInView="visible"
-        className="*:text-sm *:md:text-5xl"
+        className="*:text-sm *:md:text-5xl relative"
       >
-        <motion.h1 variants={staggerOpacity600}>
-          \ we are team of young professionals who create
-        </motion.h1>
-        <motion.h1 variants={staggerOpacity600}>
-          BRAND IDENTITY THAT LEAVES FINGERPRINTS ON THE MARKET
-        </motion.h1>
-        <motion.h1 variants={staggerOpacity600}>
-          & THE MINDS OF YOUR CUSTOMERS, SO THEIR NUMBERS GROW
-        </motion.h1>
-        <motion.h1 variants={staggerOpacity600}>BY LEAPS & BOUNDS \</motion.h1>
+        {text.map((item, index) => {
+          return (
+            <motion.h1 key={index} variants={staggerOpacity600}>
+              {item}
+            </motion.h1>
+          );
+        })}
       </motion.div>
     </article>
   );

@@ -43,7 +43,7 @@ function AllProjectsList() {
                 <h1 className="w-full">{project.desc}</h1>
                 <NavLink
                   to={project.link}
-                  className="w-full text-green cursor-pointer capitalize mt-3"
+                  className="w-full cursor-pointer capitalize mt-3"
                 >
                   {project.button}
                 </NavLink>

@@ -14,10 +14,10 @@ function Home() {
         <title>BRID | Home</title>
       </Helmet>
       <Header />
-      <Services />
-      <Awards />
       <Agency />
+      <Services />
       <Projects />
+      <Awards />
       <Footer />
     </main>
   );

@@ -6,8 +6,8 @@ function TouchContent() {
     <div className="project-section-container">
       {touchImages.map((image, index) => {
         return (
-          <div key={index}>
-            <img className="w-auto h-full" src={image} alt="logos_and_marks" />
+          <div className="w-full" key={index}>
+            <img className="w-full h-full" src={image} alt="logos_and_marks" />
           </div>
         );
       })}

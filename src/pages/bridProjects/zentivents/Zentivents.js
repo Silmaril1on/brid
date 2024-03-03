@@ -3,6 +3,7 @@ import ZentiventsContent from "./ZentiventsContent";
 import HomeBar from "../../../components/HomeBar";
 import { Helmet } from "react-helmet";
 import ProjectButtons from "./ProjectButtons";
+import About from "./About";
 
 function Zentivents() {
   return (
@@ -11,6 +12,7 @@ function Zentivents() {
         <title>BRID | Zentivents</title>
       </Helmet>
       <HomeBar />
+      <About />
       <ZentiventsContent />
       <ProjectButtons />
     </section>

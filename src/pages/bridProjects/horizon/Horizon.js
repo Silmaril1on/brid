@@ -3,6 +3,7 @@ import HorizonContent from "./HorizonContent";
 import HomeBar from "../../../components/HomeBar";
 import { Helmet } from "react-helmet";
 import ProjectButtons from "./ProjectButtons";
+import About from "./About";
 
 function Horizon() {
   return (
@@ -11,6 +12,7 @@ function Horizon() {
         <title>BRID | Horizon</title>
       </Helmet>
       <HomeBar />
+      <About />
       <HorizonContent />
       <ProjectButtons />
     </section>

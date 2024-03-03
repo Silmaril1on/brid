@@ -14,7 +14,7 @@ function HeadlineOne() {
       initial={{ x: "100%" }}
       animate={{ x: 0 }}
       transition={{ duration: 1, delay: 1.2 }}
-      className="text-end pr-2 md:pr-10"
+      className="pr-2 md:pr-10 absolute bottom-36 right-0"
     >
       create your
     </motion.h1>

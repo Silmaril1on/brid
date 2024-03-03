@@ -6,7 +6,7 @@ function DizenContent() {
     <div className="project-section-container">
       {dizenImages.map((image, index) => {
         return (
-          <div key={index}>
+          <div className="w-full" key={index}>
             <img className="w-full h-full" src={image} alt="logos_and_marks" />
           </div>
         );

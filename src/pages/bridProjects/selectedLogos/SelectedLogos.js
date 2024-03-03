@@ -3,6 +3,7 @@ import SelectedLogosContent from "./SelectedLogosContent";
 import HomeBar from "../../../components/HomeBar";
 import { Helmet } from "react-helmet";
 import ProjectButtons from "./ProjectButtons";
+import About from "./About";
 
 function SelectedLogos() {
   return (
@@ -11,6 +12,7 @@ function SelectedLogos() {
         <title>BRID | Selected Logos & Marks</title>
       </Helmet>
       <HomeBar />
+      <About />
       <SelectedLogosContent />
       <ProjectButtons />
     </section>

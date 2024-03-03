@@ -6,8 +6,8 @@ function ChampyContent() {
     <div className="project-section-container">
       {champyImages.map((image, index) => {
         return (
-          <div className="m-1" key={index}>
-            <img className="w-auto h-full" src={image} alt="logos_and_marks" />
+          <div className="w-full" key={index}>
+            <img className="w-full h-full" src={image} alt="logos_and_marks" />
           </div>
         );
       })}

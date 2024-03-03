@@ -3,6 +3,7 @@ import HomeBar from "../../../components/HomeBar";
 import LogosMarksContent from "./LogosMarksContent";
 import { Helmet } from "react-helmet";
 import ProjectButtons from "./ProjectButtons";
+import About from "./About";
 
 function LogosMarks() {
   return (
@@ -11,6 +12,7 @@ function LogosMarks() {
         <title>BRID | Logos & Marks</title>
       </Helmet>
       <HomeBar />
+      <About />
       <LogosMarksContent />
       <ProjectButtons />
     </section>

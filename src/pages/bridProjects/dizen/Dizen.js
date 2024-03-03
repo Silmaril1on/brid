@@ -3,6 +3,7 @@ import HomeBar from "../../../components/HomeBar";
 import DizenContent from "./DizenContent";
 import { Helmet } from "react-helmet";
 import ProjectButtons from "./ProjectButtons";
+import About from "./About";
 
 function Dizen() {
   return (
@@ -11,6 +12,7 @@ function Dizen() {
         <title>BRID | Dizen</title>
       </Helmet>
       <HomeBar />
+      <About />
       <DizenContent />
       <ProjectButtons />
     </section>

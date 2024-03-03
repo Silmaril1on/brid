@@ -11,11 +11,14 @@ function AnimatedInfo() {
             with a high-quality final product. To achieve these results,
           </h1>
         </div>
-        <div className="relative mb-5 mr-10 ml-5 border-right z-0">
-          <button className="uppercase p-5 center z-5 bg-gray800 relative underline underline-offset-2 text-sm hover:text-white duration-300">
+        <div className="relative mb-5 mr-10 ml-5 border-right z-10">
+          <a
+            href="#footer"
+            className="w-80 uppercase p-5 center z-5 bg-gray800 relative underline underline-offset-2 text-sm hover:text-white duration-300"
+          >
             <ElipseSvg />
             lets start create your brand id
-          </button>
+          </a>
         </div>
       </article>
     </section>

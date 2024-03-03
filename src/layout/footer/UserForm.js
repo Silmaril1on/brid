@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import ArrowSvg from "../../components/ArrowSvg";
 import GreenArrowSvg from "../../components/GreenArrowSvg";
+import RoundLineSvg from "../../components/RoundLineSvg";
 
 function UserForm() {
   const [active, setActive] = useState(1);
@@ -26,7 +27,11 @@ function UserForm() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="w-full h-96 p-4 space-y-5">
+    <form
+      ref={form}
+      onSubmit={sendEmail}
+      className="w-full md:w-2/4 h-96 p-4 space-y-5"
+    >
       <div
         id="1"
         onClick={() => setActive(1)}
@@ -73,12 +78,17 @@ function UserForm() {
         />
       </div>
       <div className="flex justify-end w-10/12">
-        <div className="h-9 center flex-row relative border-bottom">
-          <ArrowSvg />
+        <div
+          id="3"
+          onMouseEnter={() => setActive(3)}
+          onMouseLeave={() => setActive(null)}
+          className="center flex-row relative p-6 cursor-pointer"
+        >
+          {active === 3 ? <RoundLineSvg /> : ""}
           <input
             type="submit"
             value="Send"
-            className="uppercase cursor-pointer text-sm hover:text-white duration-300"
+            className="uppercase text-sm duration-300"
           />
         </div>
       </div>

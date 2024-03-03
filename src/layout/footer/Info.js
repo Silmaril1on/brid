@@ -1,17 +1,27 @@
 import React from "react";
 import UserForm from "./UserForm";
-import SocialInfo from "./SocialInfo";
+import SocialMedia from "../../components/SocialMedia";
 
 function Info() {
   return (
-    <div className="bg-gray800">
-      <article className="relative border-bottom p-3">
-        <h1>lets talk about you</h1>
-      </article>
-      <section className="center flex-col md:flex-row mt-5">
+    <div className="bg-gray800 h-full">
+      <section className="flex flex-col md:flex-row items-end justify-between mt-5">
         <UserForm />
-        <SocialInfo />
+        <div className="pr-5">
+          <SocialMedia />
+        </div>
       </section>
+      <div className=" flex flex-row items-center justify-between *:md:text-xs">
+        <p className="md:pl-5">
+          fill out the form and We will get back to you within 2 business days
+          with a link to our calendar. 
+        </p>
+        <div className=" w-full flex flex-col items-end  p-5">
+          <h1>ilia chavchavadze ave.37m</h1>
+          <h3>+995 599 49 888 09</h3>
+          <h4>id@brid.me</h4>
+        </div>
+      </div>
     </div>
   );
 }

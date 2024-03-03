@@ -3,6 +3,7 @@ import BenjysContent from "./BenjysContent";
 import HomeBar from "../../../components/HomeBar";
 import { Helmet } from "react-helmet";
 import ProjectButtons from "./ProjectButtons";
+import About from "./About";
 
 function Benjys() {
   return (
@@ -11,6 +12,7 @@ function Benjys() {
         <title>BRID | Benjy's</title>
       </Helmet>
       <HomeBar />
+      <About />
       <BenjysContent />
       <ProjectButtons />
     </section>
