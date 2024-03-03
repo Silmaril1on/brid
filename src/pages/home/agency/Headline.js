@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { staggerOpacity600 } from "../../../framerMotion/motionValues";
 
@@ -10,14 +10,6 @@ const text = [
 ];
 
 function Headline() {
-  const [cursorX, setCursorX] = useState();
-  const [cursorY, setCursorY] = useState();
-
-  window.addEventListener("mousemove", (e) => {
-    setCursorX(e.pageX);
-    setCursorY(e.pageY);
-  });
-
   return (
     <article className="md:absolute flex items-end md:pb-36 bottom-0 px-5 w-full">
       <motion.div
