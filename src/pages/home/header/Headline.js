@@ -19,7 +19,12 @@ function Headline() {
         <div
           className="cursor"
           style={{ left: cursorX + "px", top: cursorY + "px" }}
-        ></div>
+        >
+          <div className="hidden">
+            <p>{cursorX}</p>
+            <p>{cursorY}</p>
+          </div>
+        </div>
       </div>
     </article>
   );
