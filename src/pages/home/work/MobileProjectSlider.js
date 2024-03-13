@@ -5,7 +5,6 @@ import { slideShow } from "../../../framerMotion/motionValues";
 import RightButton from "../../../components/RightButton";
 import LeftButton from "../../../components/LeftButton";
 import GreenArrowSvg from "../../../components/GreenArrowSvg";
-import RoundLineSvg from "../../../components/RoundLineSvg";
 import { NavLink } from "react-router-dom";
 
 function MobileProjectSlider() {
