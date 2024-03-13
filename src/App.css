@@ -39,7 +39,7 @@
 
 @layer utilities {
   .cursor-container h1:hover ~ .cursor {
-    transform: scale(2);
+    transform: scale(2) translateY(-80%) translateX(-25%);
   }
 
   .cursor {
@@ -50,40 +50,8 @@
     top: 50px;
     left: 50px;
     pointer-events: none;
-    /* transform: translateY(-150%) translateX(-50%); */
+    transform: translateY(-150%) translateX(-50%);
     mix-blend-mode: difference;
     background-color: white;
-  }
-
-  .lit-text {
-    animation: lit 5s 2s linear infinite;
-  }
-
-  @keyframes lit {
-    0%,
-    18%,
-    20%,
-    50.1%,
-    60%,
-    65%,
-    80%,
-    90.1%,
-    92% {
-      color: #2cdc0079;
-      text-shadow: none;
-    }
-    18.1%,
-    20.1%,
-    30%,
-    50%,
-    60.1%,
-    65%,
-    80.1%,
-    90%,
-    92.1%,
-    100% {
-      color: #2cdc00;
-      text-shadow: 0 0 10px #2cdc00, 0 0 20px #2cdc00, 0 0 40px #2cdc00;
-    }
   }
 }

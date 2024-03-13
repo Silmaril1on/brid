@@ -4,7 +4,7 @@ import AwardsList from "./AwardsList";
 
 function Awards() {
   return (
-    <section id="awards" className="w-full h-screen pt-16">
+    <section id="awards" className="w-full h-auto md:h-screen pt-16">
       <AnimatedLetters text="awards" className=" ml-5 md:ml-20" />
       <AwardsList />
     </section>

@@ -10,10 +10,10 @@ function HeadlineTwo() {
   return (
     <motion.h1
       style={{ x }}
-      initial={{ x: "-100%" }}
+      initial={{ x: "-110%" }}
       animate={{ x: 0 }}
       transition={{ duration: 1, delay: 1.2 }}
-      className="pl-2 md:pl-10 absolute bottom-0 left-0"
+      className="inline absolute left-10 mt-36"
     >
       brand id
     </motion.h1>

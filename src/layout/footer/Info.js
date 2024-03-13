@@ -11,12 +11,12 @@ function Info() {
           <SocialMedia />
         </div>
       </section>
-      <div className=" flex flex-row items-center justify-between *:md:text-xs">
-        <p className="md:pl-5">
+      <div className="flex flex-col md:flex-row items-center justify-between *:md:text-xs">
+        <p className="md:pl-5 text-sm">
           fill out the form and We will get back to you within 2 business days
           with a link to our calendar. 
         </p>
-        <div className=" w-full flex flex-col items-end  p-5">
+        <div className="w-full flex flex-col items-end md:pr-5 *:text-xxs">
           <h1>ilia chavchavadze ave.37m</h1>
           <h3>+995 599 49 888 09</h3>
           <h4>id@brid.me</h4>

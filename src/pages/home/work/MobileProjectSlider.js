@@ -23,7 +23,7 @@ function MobileProjectSlider() {
   };
 
   return (
-    <section className="center flex-col md:hidden w-full">
+    <section className="center flex-col md:hidden w-full h-screen">
       <div className="relative h-500 w-full center overflow-hidden">
         <AnimatePresence initial={false} custom={direction}>
           <motion.div
@@ -55,7 +55,6 @@ function MobileProjectSlider() {
             <article className="p-2 w-full space-y-2">
               <h1 className="text-sm capitalize">{projectsData[index].info}</h1>
               <div className="relative flex justify-end w-32 cursor-pointer">
-                <RoundLineSvg />
                 <NavLink
                   to={projectsData[index].link}
                   className="text-end text-green relative z-5"

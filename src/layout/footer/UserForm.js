@@ -77,7 +77,7 @@ function UserForm() {
           className="footer-input-style h-36"
         />
       </div>
-      <div className="flex justify-end w-10/12">
+      <div className="flex justify-end w-full md:w-10/12">
         <div
           id="3"
           onMouseEnter={() => setActive(3)}

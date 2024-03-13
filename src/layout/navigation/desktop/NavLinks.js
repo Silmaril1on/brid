@@ -11,7 +11,7 @@ function NavLinks() {
         variants={staggerOpacity200}
         initial="hidden"
         animate="visible"
-        className="center flex-row [&>*:nth-child(5)]:lit-text [&>*:nth-child(5)]:font-bold"
+        className="center flex-row [&>*:nth-child(5)]:font-bold"
       >
         {navlinksData.map((item) => {
           return (

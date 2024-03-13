@@ -6,10 +6,10 @@ function Footer() {
   return (
     <section
       id="footer"
-      className="w-full h-screen pt-16 flex flex-col justify-between"
+      className="w-full h-auto md:h-screen pt-5 md:pt-16 flex flex-col justify-between"
     >
-      <div className="flex flex-row justify-between items-end relative border-bottom ">
-        <p className="w-1/3 pl-5 text-sm">
+      <div className="flex flex-col md:flex-row justify-between items-end relative border-bottom ">
+        <p className="w-full md:w-1/3 pl-5 text-xs md:text-sm">
           Are you interested in working together and elevate your brand to the
           next level?
         </p>

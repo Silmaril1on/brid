@@ -3,7 +3,7 @@ import ServicesList from "./ServicesList";
 
 function Services() {
   return (
-    <section id="services" className="h-screen w-full mt-10">
+    <section id="services" className="h-auto w-full mt-10">
       <div className="w-full">
         <ServicesList />
       </div>

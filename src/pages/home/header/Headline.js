@@ -12,12 +12,12 @@ function Headline() {
   });
 
   return (
-    <article className="absolute bottom-0 h-full overflow-hidden w-full *:text-4xl md:*:text-9xl *:w-full *:my-5 *:font-normal">
-      <div className="cursor-container h-full">
+    <article className="cursor-none absolute bottom-0 h-full overflow-hidden w-full *:text-4xl md:*:text-9xl *:w-full *:my-5 *:font-normal">
+      <div className="cursor-container h-full center flex-col">
         <HeadlineOne />
         <HeadlineTwo />
         <div
-          className="cursor"
+          className="cursor hidden md:block"
           style={{ left: cursorX + "px", top: cursorY + "px" }}
         ></div>
       </div>
