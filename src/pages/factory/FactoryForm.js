@@ -1,9 +1,12 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import ElipseSvg from "../../components/ElipseSvg";
 import emailjs from "@emailjs/browser";
 import { IoIosArrowDown } from "react-icons/io";
+import ArrowSvg from "../../components/ArrowSvg";
+import GreenArrowSvg from "../../components/GreenArrowSvg";
 
 function FactoryForm() {
+  const [active, setActive] = useState(1);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -24,53 +27,109 @@ function FactoryForm() {
   };
 
   return (
-    <section className="bg-gray800 center flex-col w-full">
+    <section className="bg-gray800 center flex-col w-full md:w-2/4 p-2">
       <h1 className="my-10 text-white">fill to be part of our team</h1>
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="my-5 w-11/12 md:w-2/4 center flex-col space-y-4"
+        className="my-5 w-full center flex-col space-y-4"
       >
-        <div className="w-10/12">
+        <div
+          id="1"
+          onClick={() => setActive(1)}
+          className="w-full md:w-10/12 relative border-bottom flex flex-row"
+        >
+          <div className="h-9 center flex-row relative border-bottom">
+            {active === 1 ? <GreenArrowSvg /> : <ArrowSvg />}
+          </div>
           <input
             type="name"
             placeholder="name surename"
-            className="factory-input-style"
+            className={
+              active === 1
+                ? "footer-input-style placeholder:text-green"
+                : "footer-input-style"
+            }
             name="to_name"
           />
         </div>
-        <div className="w-10/12">
+        <div
+          id="2"
+          onClick={() => setActive(2)}
+          className="w-full md:w-10/12 relative border-bottom flex flex-row"
+        >
+          <div className="h-9 center flex-row relative border-bottom">
+            {active === 2 ? <GreenArrowSvg /> : <ArrowSvg />}
+          </div>
           <input
-            type="company name"
+            type="company_name"
             placeholder="company name"
-            className="factory-input-style"
+            className={
+              active === 2
+                ? "footer-input-style placeholder:text-green"
+                : "footer-input-style"
+            }
             name="company_name"
           />
         </div>
-        <div className="w-10/12">
+        <div
+          id="3"
+          onClick={() => setActive(3)}
+          className="w-full md:w-10/12 relative border-bottom flex flex-row"
+        >
+          <div className="h-9 center flex-row relative border-bottom">
+            {active === 3 ? <GreenArrowSvg /> : <ArrowSvg />}
+          </div>
           <input
             type="email"
-            placeholder="contact e-mail"
-            className="factory-input-style"
-            name="from_name"
+            placeholder="email"
+            className={
+              active === 3
+                ? "footer-input-style placeholder:text-green"
+                : "footer-input-style"
+            }
+            name="email"
           />
         </div>
-        <div className="w-10/12">
+        <div
+          id="4"
+          onClick={() => setActive(4)}
+          className="w-full md:w-10/12 relative border-bottom flex flex-row"
+        >
+          <div className="h-9 center flex-row relative border-bottom">
+            {active === 4 ? <GreenArrowSvg /> : <ArrowSvg />}
+          </div>
           <input
             type="phone number"
             placeholder="phone number"
-            className="factory-input-style"
+            className={
+              active === 4
+                ? "footer-input-style placeholder:text-green"
+                : "footer-input-style"
+            }
             name="phone_number"
           />
         </div>
-        <div className="w-10/12 relative z-5">
+
+        <div
+          id="5"
+          onClick={() => setActive(5)}
+          className="w-full md:w-10/12 z-5 relative border-bottom flex flex-row"
+        >
+          <div className="h-9 center flex-row relative border-bottom">
+            {active === 5 ? <GreenArrowSvg /> : <ArrowSvg />}
+          </div>
           <div className="absolute right-5 h-full center -z-1">
-            <IoIosArrowDown className="text-green text-xl" />
+            <IoIosArrowDown className="text-gray400 text-xl" />
           </div>
           <select
             type="name"
             placeholder="offer of packages"
-            className="factory-input-style appearance-none text-white *:bg-gray800"
+            className={
+              active === 5
+                ? "footer-input-style placeholder:text-green appearance-none"
+                : "footer-input-style appearance-none"
+            }
             name="package_offer"
           >
             <option value="free">free package</option>
@@ -79,14 +138,26 @@ function FactoryForm() {
             <option value="ultimate">ultimate package</option>
           </select>
         </div>
-        <div className="w-10/12 relative z-5">
+
+        <div
+          id="6"
+          onClick={() => setActive(6)}
+          className="w-full md:w-10/12 z-5 relative border-bottom flex flex-row"
+        >
+          <div className="h-9 center flex-row relative border-bottom">
+            {active === 6 ? <GreenArrowSvg /> : <ArrowSvg />}
+          </div>
           <div className="absolute right-5 h-full center -z-1">
-            <IoIosArrowDown className="text-green text-xl" />
+            <IoIosArrowDown className="text-gray400 text-xl" />
           </div>
           <select
             type="duration"
             placeholder="duration of cooperation"
-            className="factory-input-style appearance-none text-white *:bg-gray800"
+            className={
+              active === 5
+                ? "footer-input-style placeholder:text-green appearance-none"
+                : "footer-input-style appearance-none"
+            }
             name="colab_duration"
           >
             <option value="1 month">1 month</option>
@@ -95,28 +166,31 @@ function FactoryForm() {
             <option value="1 year">1 year</option>
           </select>
         </div>
-        <div className="w-10/12">
+
+        <div className="w-full md:w-10/12 z-5 relative border-bottom flex flex-row">
           <textarea
             name="message"
-            placeholder="descriotion"
-            className="factory-input-style rounded-3xl h-36"
+            placeholder="project description"
+            className="footer-input-style rounded-3xl h-36"
           />
         </div>
-        <div className="center w-10/12 relative">
-          <ElipseSvg />
-          <input
-            type="submit"
-            value="Send To Us"
-            className="uppercase cursor-pointer text-base hover:text-white relative z-2"
-          />
-        </div>
+        <section className="flex flex-row justify-between w-full px-2 md:px-16">
+          <div className="flex flex-col my-3">
+            <h1 className="text-xs">
+              Our meeting will be scheduled by our manager
+            </h1>
+            <h6 className="text-green text-xxs">approximate time 2 days</h6>
+          </div>
+          <div className="center w-32 relative">
+            <ElipseSvg />
+            <input
+              type="submit"
+              value="Send"
+              className="uppercase cursor-pointer text-base hover:text-white relative z-2"
+            />
+          </div>
+        </section>
       </form>
-      <div className="center flex-col my-3">
-        <h1 className="text-center">
-          Our meeting will be scheduled by our manager
-        </h1>
-        <h6 className="text-green text-xs">approximate time 2 days</h6>
-      </div>
     </section>
   );
 }

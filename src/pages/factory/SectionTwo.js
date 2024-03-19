@@ -1,5 +1,4 @@
 import React from "react";
-import RoundedLineSvg from "../../components/RoundLineSvg";
 import { motion } from "framer-motion";
 import { rotateX } from "../../framerMotion/motionValues";
 
@@ -23,37 +22,38 @@ const data = [
 
 function SectionTwo() {
   return (
-    <section className="w-full bg-gray800 flex flex-col">
-      <article className="flex flex-col w-64 h-64 md:h-44 justify-between items-start pl-4 py-3">
-        <h1> hire creative team and graphic designer to help you scale</h1>
-        <button className="uppercase relative">
-          <RoundedLineSvg />
-          get started
-        </button>
-      </article>
-      <div className="center flex-col md:flex-row items-start">
-        <article className="w-full md:w-10/12 bg-black pt-20">
+    <section className="w-full h-screen">
+      <div className="flex flex-col h-full">
+        <article className="w-full flex flex-col md:flex-row items-center justify-between *:text-6xl md:*:text-200 px-10 pt-5">
+          <h1>why</h1>
+          <h1>it</h1>
+          <h1>work</h1>
+        </article>
+
+        <article className="flex flex-col md:flex-row h-full pb-10">
+          <div className="w-full flex items-end p-5">
+            <h1 className="text-green">benefits</h1>
+          </div>
+
           <motion.div
             variants={rotateX}
             initial="hidden"
             whileInView="visible"
-            className="flex flex-col w-full md:w-10/12 md:ml-10 md:my-10 space-y-4"
+            className="flex flex-col w-full md:w-2/4 justify-end"
           >
             {data.map((item, index) => {
               return (
                 <motion.div
                   key={index}
                   variants={rotateX}
-                  className="flex flex-row p-2"
+                  className="flex flex-col p-2"
                 >
-                  <h1 className="text-9xl h-full w-20 text-center text-white">
+                  <h1 className="text-xl h-full w-20 text-center text-gray400">
                     {item.number}
                   </h1>
                   <div className="flex flex-col justify-end w-full pl-8">
-                    <h1 className="text-green text-2xl md:text-5xl">
-                      {item.name}
-                    </h1>
-                    <p className="py-3 text-xs md:text-sm normal-case">
+                    <h1 className="text-2xl">{item.name}</h1>
+                    <p className="py-3 text-gray400 text-xs normal-case">
                       {item.info}
                     </p>
                   </div>
@@ -61,12 +61,6 @@ function SectionTwo() {
               );
             })}
           </motion.div>
-        </article>
-        <article className="w-full md:w-1/4 mt-14">
-          <div className="flex flex-col items-end px-10">
-            <h1 className="text-green text-3xl w-full">why it works</h1>
-            <h6>benefits</h6>
-          </div>
         </article>
       </div>
     </section>

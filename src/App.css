@@ -29,9 +29,6 @@
   .project-section-container {
     @apply w-full px-5 py-2 center flex-col;
   }
-  .factory-input-style {
-    @apply w-full bg-transparent border rounded-full py-2 pl-5 border-green uppercase text-xs placeholder:text-gray400 outline-none;
-  }
   .footer-input-style {
     @apply bg-transparent w-full pl-3 uppercase placeholder:text-gray400 outline-none;
   }

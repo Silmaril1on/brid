@@ -6,7 +6,7 @@ import SectionThree from "./SectionThree";
 import SectionFour from "./SectionFour";
 import { Helmet } from "react-helmet";
 import SectionFive from "./SectionFive";
-import FactoryForm from "./FactoryForm";
+import SectionSix from "./SectionSix";
 
 function Factory() {
   return (
@@ -20,7 +20,7 @@ function Factory() {
       <SectionThree />
       <SectionFour />
       <SectionFive />
-      <FactoryForm />
+      <SectionSix />
     </section>
   );
 }
