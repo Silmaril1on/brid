@@ -11,7 +11,7 @@ function Info() {
           <SocialMedia />
         </div>
       </section>
-      <div className="flex flex-col md:flex-row items-center justify-between *:md:text-xs">
+      <div className="flex flex-col md:flex-row items-center justify-between *:md:text-xs p-3">
         <p className="md:pl-5 text-sm">
           fill out the form and We will get back to you within 2 business days
           with a link to our calendar. 
