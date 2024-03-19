@@ -17,9 +17,10 @@ module.exports = {
         gray400: "#777676",
         gray600: "#4d4b4b",
         gray800: "#292929",
+        gray900: "#161815",
         green: "#2CDC00",
         white200: "#DFDFDF",
-        black: "#151715",
+        black: "#000000",
       },
       fontFamily: {
         primary: "Raleway",

@@ -1,59 +1,65 @@
 import React from "react";
-import ElipseSvg from "../../components/ElipseSvg";
+import ArrowSvg from "../../components/ArrowSvg";
 
 const data = [
   {
     id: 0,
     number: 1,
-    price: 100,
-    itemAmount: "12 items",
+    price: 700,
+    itemAmount: "15 item",
+    duration: "per month",
   },
   {
     id: 1,
     number: 2,
-    price: 100,
-    itemAmount: "20 items",
+    price: 900,
+    itemAmount: "25 item",
+    duration: "per month",
   },
   {
     id: 2,
     number: 3,
-    price: 100,
-    itemAmount: "30 items",
+    price: 2200,
+    itemAmount: "unlimited",
+    duration: "per month",
   },
   {
     id: 3,
     number: 4,
-    price: 100,
-    itemAmount: "unlimited",
+    price: 35,
+    itemAmount: "hourly",
+    duration: "per hour",
   },
 ];
 
 function SectionFive() {
   return (
-    <section className="center flex-col w-full">
-      <div className="flex flex-col md:flex-row w-full my-5">
-        <article className="flex flex-col w-full p-10">
-          <h1 className="text-green text-4xl">pricing and packages</h1>
-          <h6>description</h6>
-        </article>
-        <article className="flex flex-col items-end justify-center w-full">
-          <button className="relative mr-10 uppercase text-white p-10 center flex">
-            <ElipseSvg />
-            get started
-          </button>
-        </article>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-4 w-full border-t border-gray800">
+    <section className="center flex-col w-full h-auto md:h-screen my-10 md:my-5 bg-black">
+      <div className="grid grid-cols-1 md:grid-cols-4 w-full">
         {data.map((item) => {
           return (
             <div
-              className="center flex-col h-500 border-r border-gray-800 space-y-5"
+              className="center pb-5 px-5 flex-col h-500 justify-between space-y-5 even:mt-14 even:bg-gray800 odd:bg-gray900 "
               key={item.id}
             >
-              <h1 className="text-9xl text-gray800">{item.number}</h1>
-              <h1>$ {item.price}</h1>
-              <h1 className="text-green text-2xl">{item.itemAmount}</h1>
-              <h1 className="text-xs">per month</h1>
+              <article className="w-full mt-10">
+                <h1 className="text-6xl relative border-bottom text-gray100 w-full text-start">
+                  {item.itemAmount}
+                </h1>
+                <div className="flex flex-row mt-5 relative border-bottom items-center justify-between">
+                  <h1>{item.duration}</h1>
+                  <span className="h-9 rotate-90">
+                    <ArrowSvg />
+                  </span>
+                </div>
+              </article>
+              <article className="relative border-t border-gray400 pt-2 items-center justify-between w-full flex flex-row">
+                <div>
+                  <h1>price</h1>
+                  <h6>total [ inc vat ] </h6>
+                </div>
+                <h1 className="text-2xl">$ {item.price}</h1>
+              </article>
             </div>
           );
         })}
