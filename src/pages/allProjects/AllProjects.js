@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 
 function AllProjects() {
   return (
-    <section className="w-full mt-14">
+    <section className="w-full relative z-10 -mt-14">
       <Helmet>
         <title>BRID | Projects</title>
       </Helmet>

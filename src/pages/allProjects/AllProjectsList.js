@@ -7,7 +7,7 @@ import { NavLink } from "react-router-dom";
 
 function AllProjectsList() {
   return (
-    <section className="mt-10">
+    <section className="pt-40">
       <div className="grid grid-col-1 md:grid-cols-3 gap-4 p-3">
         {projectsData.map((project) => {
           return (
