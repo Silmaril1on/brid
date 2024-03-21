@@ -1,7 +1,8 @@
-import React from "react";
-import ElipseSvg from "../../../components/ElipseSvg";
+import React, { useState } from "react";
+import RoundLineSvg from "../../../components/RoundLineSvg";
 
 function AnimatedInfo() {
+  const [line, setLine] = useState(false);
   return (
     <section className="w-full md:w-7/12 bg-gray800">
       <article className="flex flex-col justify-between h-full py-5">
@@ -11,12 +12,16 @@ function AnimatedInfo() {
             with a high-quality final product. To achieve these results,
           </h1>
         </div>
-        <div className="relative mb-5 mr-10 ml-5 border-right z-5">
+        <div
+          onMouseEnter={() => setLine(true)}
+          onMouseLeave={() => setLine(false)}
+          className="relative mb-5 mr-10 ml-5 border-right z-5"
+        >
           <a
             href="#footer"
             className="w-80 uppercase p-5 center z-5 bg-gray800 relative underline underline-offset-2 text-sm hover:text-white duration-300"
           >
-            <ElipseSvg />
+            {line && <RoundLineSvg />}
             lets start create your brand id
           </a>
         </div>

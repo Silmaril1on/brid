@@ -7,10 +7,9 @@ export const animatePath = {
     opacity: 1,
     pathLength: 1,
     transition: {
-      duration: 0.4,
-      ease: "easeInOut",
-      staggerChildren: 0.4,
-      delayChildren: 0.4,
+      duration: 0.3,
+      staggerChildren: 0.2,
+      delayChildren: 0.2,
     },
   },
 };

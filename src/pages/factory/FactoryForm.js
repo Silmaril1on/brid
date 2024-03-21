@@ -1,9 +1,9 @@
 import React, { useRef, useState } from "react";
-import ElipseSvg from "../../components/ElipseSvg";
 import emailjs from "@emailjs/browser";
 import { IoIosArrowDown } from "react-icons/io";
 import ArrowSvg from "../../components/ArrowSvg";
 import GreenArrowSvg from "../../components/GreenArrowSvg";
+import RoundLineSvg from "../../components/RoundLineSvg";
 
 function FactoryForm() {
   const [active, setActive] = useState(1);
@@ -182,7 +182,7 @@ function FactoryForm() {
             <h6 className="text-green text-xxs">approximate time 2 days</h6>
           </div>
           <div className="center w-32 relative">
-            <ElipseSvg />
+            <RoundLineSvg />
             <input
               type="submit"
               value="Send"
