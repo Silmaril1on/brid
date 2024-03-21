@@ -20,7 +20,7 @@ function Projects() {
         <div className="sticky top-0 flex items-center overflow-hidden">
           <motion.div style={{ x }} className="center flex-row pt-16">
             {projectsData.slice(1, 9).map((project) => {
-              return <ProjectsList key={project.id} item={project} />;
+              return <ProjectsList key={project.id} {...project} />;
             })}
           </motion.div>
         </div>
