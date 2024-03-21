@@ -1,23 +1,38 @@
 import React from "react";
 
+const socMedia = [
+  {
+    name: "fb",
+    link: "https://www.facebook.com/idbrid",
+  },
+  {
+    name: "be",
+    link: "https://www.behance.net/ikudarsk",
+  },
+  {
+    name: "db",
+    link: "https://dribbble.com/BRID",
+  },
+  {
+    name: "ins",
+    link: "https://www.instagram.com/brid.me",
+  },
+  {
+    name: "ln",
+    link: "https://www.facebook.com/idbrid",
+  },
+];
+
 function SocialMedia() {
   return (
-    <div className="h-9 items-center text-xxs md:text-base text-gray200 space-x-1 md:space-x-3 w-auto flex flex-row">
-      <a href="https://www.facebook.com/idbrid" target="_blank">
-        fb \
-      </a>
-      <a href="https://www.behance.net/ikudarsk" target="_blank">
-        be \
-      </a>
-      <a href="https://dribbble.com/BRID" target="_blank">
-        db \
-      </a>
-      <a href="https://www.instagram.com/brid.me" target="_blank">
-        ins \
-      </a>
-      <a href="" target="_blank">
-        ln
-      </a>
+    <div className="h-9 items-center text-xxs md:text-base text-gray200 space-x-1 md:space-x-3 w-auto flex flex-row pr-4">
+      {socMedia.map((link) => {
+        return (
+          <a rel="noreferrer" target="_blank" href={link.link}>
+            {link.name} \
+          </a>
+        );
+      })}
     </div>
   );
 }

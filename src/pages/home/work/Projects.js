@@ -18,7 +18,7 @@ function Projects() {
       <MobileProjectSlider />
       <section ref={targetRef} className="relative h-[150vh] hidden md:block">
         <div className="sticky top-0 flex items-center overflow-hidden">
-          <motion.div drag="x" style={{ x }} className="center flex-row pt-16">
+          <motion.div style={{ x }} className="center flex-row pt-16">
             {projectsData.slice(1, 9).map((project) => {
               return <ProjectsList key={project.id} item={project} />;
             })}

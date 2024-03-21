@@ -6,7 +6,6 @@ module.exports = {
       backgroundImage: {
         vector269: "url('./assets/Vector269.png')",
         arrow: "url('./assets/arrow.png')",
-        print: "url('./assets/group174.png')",
       },
       backgroundSize: {
         50: "100%",
