@@ -19,16 +19,16 @@ const socMedia = [
   },
   {
     name: "ln",
-    link: "https://www.facebook.com/idbrid",
+    link: "https://www.linkedin.com/company/bridagency/",
   },
 ];
 
 function SocialMedia() {
   return (
     <div className="h-9 items-center text-xxs md:text-base text-gray200 space-x-1 md:space-x-3 w-auto flex flex-row pr-4">
-      {socMedia.map((link) => {
+      {socMedia.map((link, index) => {
         return (
-          <a rel="noreferrer" target="_blank" href={link.link}>
+          <a key={index} rel="noreferrer" target="_blank" href={link.link}>
             {link.name} \
           </a>
         );

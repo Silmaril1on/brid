@@ -33,6 +33,7 @@ module.exports = {
         450: "450px",
         500: "500px",
         650: "650px",
+        700: "700px",
         1500: "1500px",
       },
       maxWidth: {
@@ -41,6 +42,7 @@ module.exports = {
       width: {
         98: "98%",
         505: "505px",
+        370: "370px",
       },
       zIndex: {
         1: "1",

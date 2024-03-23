@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import ArrowSvg from "../../../components/ArrowSvg";
-import RoundLineSvg from "../../../components/RoundLineSvg";
+import ArrowSvg from "../../../../components/ArrowSvg";
+import RoundLineSvg from "../../../../components/RoundLineSvg";
 import { NavLink } from "react-router-dom";
 
 function ProjectsList({ name, image, info, link, button }) {
   const [active, setActive] = useState(false);
   return (
-    <section className="w-505 *:duration-300 relative border-bottom duration-500 flex flex-col h-full px-4 ">
+    <section className="w-505 *:duration-300 relative border-bottom duration-500 flex flex-col h-full px-4">
       <article className="flex flex-row w-full h-12 relative mb-10 space-x-6 border-bottom">
         <div className="flex flex-row w-full">
           <div className="w-auto">
