@@ -3,7 +3,7 @@ import { motion, useMotionValue } from "framer-motion";
 import projectsData from "../../../../database/projectsData";
 import ProjectsSlider from "./ProjectsSwiperList";
 
-const DRAG_BUFFER = 50;
+const DRAG_BUFFER = 20;
 
 const SPRING_OPTIONS = {
   type: "spring",
@@ -27,26 +27,28 @@ function MobileSwiper() {
   };
 
   return (
-    <section className="block md:hidden w-auto overflow-hidden relative">
-      <motion.div
-        drag="x"
-        dragConstraints={{
-          left: 0,
-          right: 0,
-        }}
-        style={{
-          x: dragX,
-        }}
-        animate={{
-          translateX: `-${project * 370}px`,
-        }}
-        transition={SPRING_OPTIONS}
-        onDragEnd={onDragEnd}
-        className="flex cursor-grab items-center active:cursor-grabbing h-500 w-max"
-      >
-        <ProjectsSlider project={project} animation={SPRING_OPTIONS} />
-      </motion.div>
-    </section>
+    <div className="w-auto center">
+      <section className="block md:hidden w-370 overflow-hidden relative ">
+        <motion.div
+          drag="x"
+          dragConstraints={{
+            left: 0,
+            right: 0,
+          }}
+          style={{
+            x: dragX,
+          }}
+          animate={{
+            translateX: `-${project * 370}px`,
+          }}
+          transition={SPRING_OPTIONS}
+          onDragEnd={onDragEnd}
+          className="flex cursor-grab items-center active:cursor-grabbing h-500 w-max"
+        >
+          <ProjectsSlider project={project} animation={SPRING_OPTIONS} />
+        </motion.div>
+      </section>
+    </div>
   );
 }
 

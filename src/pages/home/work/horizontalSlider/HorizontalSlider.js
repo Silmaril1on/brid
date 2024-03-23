@@ -12,7 +12,7 @@ function HorizontalSlider() {
   const x = useTransform(scrollYProgress, [0, 1], ["0", "-63%"]);
 
   return (
-    <section ref={targetRef} className="h-[150vh] hidden md:block">
+    <section ref={targetRef} className="relative h-[150vh] hidden md:block">
       <div className="sticky top-0 flex items-center overflow-hidden">
         <motion.div style={{ x }} className="center flex-row pt-16">
           {projectsData.slice(1, 9).map((project) => {
